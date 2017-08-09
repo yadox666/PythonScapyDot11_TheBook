@@ -1,0 +1,44 @@
+<html>
+  <head>
+  <TITLE>RSSI Meter</TITLE>   
+<script type="text/javascript" src="loader.js"></script>
+   <script src="jquery.min.js"></script>
+   <script type="text/javascript">
+      google.charts.load('current', {'packages':['gauge']});
+      google.charts.setOnLoadCallback(drawChart);
+      function drawChart() {
+	
+        var data = google.visualization.arrayToDataTable([
+          ['Label', 'Value'],
+          ['Signal', 0],
+        ]);
+
+        var options = {
+          width: 900, height: 520,
+          yellowFrom:40, yellowTo: 80,
+          redFrom: 80, redTo: 100,
+          minorTicks: 5,
+	  title: "RSSI"
+        };
+
+        var chart = new google.visualization.Gauge(document.getElementById('chart_div'));
+        chart.draw(data, options);
+	var valor;
+	setInterval(function() {
+	valor = $.ajax({
+                 url: "my.json",
+                 async: false,
+                 }).responseText;
+		data.setValue(0, 1, valor );
+        chart.draw(data, options);
+        }, 900);
+
+      }
+    </script>
+  </head>
+  <body>
+	<h1>RSSI Value</h1>
+    <div id="chart_div" style="width: 400px; height: 120px;"></div>
+  </body>
+</html>
+
