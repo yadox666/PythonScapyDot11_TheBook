@@ -1,1 +1,7 @@
 # PythonScapyDot11_TheBook
+
+Este libro ofrece una solución real para todos aquellos amantes de la ciberseguridad y el hacking sobre tecnologías Wi-Fi / 802.11, que desean aprender a programar de forma sencilla sus propias herramientas para pentesting o auditoría de redes inalámbricas. En los últimos años Python ha alcanzado un puesto destacado como lenguaje de programación para pentesting gracias a su sencillez y capacidades. La gran cantidad de módulos, librerías y ejemplos disponibles permiten programar fácilmente cualquier tipo de aplicación. Scapy es el módulo más completo de red para Python, y permite analizar, diseccionar o crear cualquier paquete sobre cualquier protocolo de red existente. La escasez de documentación sobre Scapy Dot11 hace de este libro una herramienta única para todos los profesionales, hackers, pentesters, analistas de seguridad y ciberforenses que deseen crear su propio arsenal de herramientas de penetración Wi-Fi El formato de este libro ofrece una primera sección que sirve como introducción teórica sobre las redes Wi-Fi y su estructura de funcionamiento y. La segunda parte, eminentemente práctica, presenta una selección de más de 40 ejemplos de scripts programados en lenguaje Python que utilizan la librería Scapy para realizar operaciones de Hacking y Pentesting Wi-Fi.
+
+https://www.amazon.es/Python-Scapy-Dot11-Programacion-pentesters/dp/1542748704/
+
+
